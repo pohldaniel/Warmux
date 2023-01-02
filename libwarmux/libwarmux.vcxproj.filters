@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1bfd91b5-48be-4f64-bbaf-b7451ddbf916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\action">
+      <UniqueIdentifier>{ce2370bf-3821-43b1-b8f2-fccff26d72a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\base">
+      <UniqueIdentifier>{4f9172f3-0655-409e-8b08-491f5e961ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\maths">
+      <UniqueIdentifier>{58120c49-dd99-48bb-a937-01d2bcb557b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\net">
+      <UniqueIdentifier>{904012a2-414e-43b0-9dd4-c4072034594e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\tools">
+      <UniqueIdentifier>{983a27e1-56a1-47a2-8657-eb4b70cff1ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{2e98e549-66c4-45fb-a9a9-e4431f380494}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\net\download.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\distant_cpu.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\extSDL_net.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\index_server.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\network.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\player.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\socket.cpp">
+      <Filter>Source\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\action\action.cpp">
+      <Filter>Source\action</Filter>
+    </ClCompile>
+    <ClCompile Include="src\action\action_handler.cpp">
+      <Filter>Source\action</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\error.cpp">
+      <Filter>Source\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\i18n.cpp">
+      <Filter>Source\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\singleton.cpp">
+      <Filter>Source\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maths\euler_vector.cpp">
+      <Filter>Source\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\debug.cpp">
+      <Filter>Source\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\file_tools.cpp">
+      <Filter>Source\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\random.cpp">
+      <Filter>Source\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config_visual.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_action.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_action_handler.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_base.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_config.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_debug.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_distant_cpu.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_download.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_error.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_euler_vector.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_file_tools.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_i18n.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_index_server.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_index_svr_msg.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_network.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_player.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_point.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_random.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_rectangle.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_singleton.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_socket.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_team_config.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_types.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WARMUX_vector2.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\extSDL_net.h">
+      <Filter>Source\net</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
