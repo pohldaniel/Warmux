@@ -92,7 +92,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\libd\x86;..\libiconv\lib\x86;..\libintl\lib\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\libd\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;SDL_net.lib;SDL_gfx.lib;SDLmain.lib;libwarmux.lib;libintl.lib;libiconv.lib;libxml2.lib;libpng.lib;libzlib.lib;fixedpoint.lib;libcurl_a.lib;winmm.lib;advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -106,7 +107,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\libd\x64;..\libiconv\lib\x86;..\libintl\lib\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\libd\x64;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;SDL_net.lib;SDL_gfx.lib;SDLmain.lib;libwarmux.lib;libintl.lib;libiconv.lib;libxml2.lib;libpng.lib;libzlib.lib;fixedpoint.lib;libcurl_a.lib;winmm.lib;advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,7 +119,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;FRIBIDI_STATICLIB;CURL_STATICLIB;LIBXML_STATIC;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;FRIBIDI_STATICLIB;CURL_STATICLIB;LIBXML_STATIC;LIBINTL_STATIC;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\src;.\src\msvc;..\fixedpoint;..\libwarmux\include;..\libpng\include;..\libzlib\include;..\libiconv\include;..\libxml2\include;..\libintl\include;..\SDL\include;..\SDL_net\include;..\SDL_ttf\include\freetype;..\SDL_mixer\include;..\SDL_gfx\include;..\SDL_image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -125,8 +127,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\lib\x86;..\libiconv\lib\x86;..\libintl\lib\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;SDL_net.lib;SDL_gfx.lib;SDLmain.lib;libwarmux.lib;libintl.lib;libiconv.lib;libxml2.lib;libpng.lib;libzlib.lib;fixedpoint.lib;libcurl_a.lib;winmm.lib;advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;SDL_net.lib;SDL_gfx.lib;SDLmain.lib;libwarmux.lib;libxml2.lib;libpng.lib;libzlib.lib;libintl.lib;fixedpoint.lib;libcurl_a.lib;winmm.lib;advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -144,7 +146,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\lib\x64;..\libiconv\lib\x86;..\libintl\lib\x86;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\x64;..\libcurl\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;SDL_net.lib;SDL_gfx.lib;SDLmain.lib;libwarmux.lib;libintl.lib;libiconv.lib;libxml2.lib;libpng.lib;libzlib.lib;fixedpoint.lib;libcurl_a.lib;winmm.lib;advapi32.lib;kernel32.lib;shell32.lib;user32.lib;Ws2_32.lib;wldap32.lib;crypt32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

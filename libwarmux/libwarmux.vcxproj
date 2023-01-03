@@ -158,7 +158,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;FRIBIDI_STATICLIB;CURL_STATICLIB;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";_CRT_SECURE_NO_WARNINGS;M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FRIBIDI_STATICLIB;CURL_STATICLIB;LIBINTL_STATIC;main=SDL_main;INSTALL_DATADIR="data";INSTALL_LOCALEDIR="locale";FONT_FILE="data\\font\\Ubuntu-R.ttf";_CRT_SECURE_NO_WARNINGS;M_PI=3.14159265358979323846f;M_PI_2=1.57079632679489661923f;M_PI_4=0.78539816339744830962f;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;..\fixedpoint;..\SDL\include;..\SDL_net\include;..\libiconv\include;..\libintl\include;..\libcurl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -166,6 +166,13 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
