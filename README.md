@@ -4,3 +4,5 @@ This repository contains a new setup of https://github.com/yeKcim/warmux and it'
 It should be clear that the Copyright of Warmux and of it's dependencies are not in my hand.
 
 My intention for this repository is to get a deeper understanding of game programing.
+
+For compiling CURL see https://www.youtube.com/watch?v=q_mXVZ6VJs4
